@@ -60,7 +60,7 @@ const Homepage = () => {
     const initials = groupName
       .split(" ")
       .map(word => word[0]?.toUpperCase())
-      .join("");
+      .join("").slice(0,2);
   
     const newGroup = {
       name: groupName,
